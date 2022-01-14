@@ -1,0 +1,88 @@
+[
+{
+  "name":"[B"}
+,
+{
+  "name":"[C"}
+,
+{
+  "name":"[I"
+}
+,
+{
+  "name":"java.io.Serializable",
+  "queryAllDeclaredMethods":true}
+,
+{
+  "name":"java.lang.Boolean",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true}
+,
+{
+  "name":"java.lang.Cloneable",
+  "queryAllDeclaredMethods":true}
+,
+{
+  "name":"java.lang.Comparable",
+  "queryAllDeclaredMethods":true}
+,
+{
+  "name":"java.lang.Integer",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true}
+,
+{
+  "name":"java.lang.Number",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true}
+,
+{
+  "name":"java.lang.Void",
+  "methods":[{"name":"<init>","parameterTypes":[] }]}
+,
+{
+  "name":"java.lang.management.ManagementFactory",
+  "methods":[{"name":"getRuntimeMXBean","parameterTypes":[] }]}
+,
+{
+  "name":"java.lang.management.RuntimeMXBean",
+  "methods":[{"name":"getInputArguments","parameterTypes":[] }]}
+,
+{
+  "name":"java.lang.reflect.AccessibleObject",
+  "fields":[{"name":"override"}]}
+,
+{
+  "name":"java.nio.Bits",
+  "fields":[{"name":"UNALIGNED"}]}
+,
+{
+  "name":"java.nio.Buffer",
+  "fields":[{"name":"address"}]}
+,
+{
+  "name":"java.nio.ByteBuffer",
+  "queriedMethods":[{"name":"alignedSlice","parameterTypes":["int"] }]}
+,
+{
+  "name":"java.nio.DirectByteBuffer",
+  "queriedMethods":[{"name":"<init>","parameterTypes":["long","int"] }]}
+,
+{
+  "name":"java.sql.Date"}
+,
+{
+  "name":"java.util.Collections$UnmodifiableMap",
+  "fields":[{"name":"m"}]}
+,
+{
+  "name":"jdk.internal.misc.Unsafe",
+  "methods":[{"name":"getUnsafe","parameterTypes":[] }]}
+,
+{
+  "name":"jdk.internal.module.IllegalAccessLogger",
+  "fields":[{"name":"logger"}]
+}
+]

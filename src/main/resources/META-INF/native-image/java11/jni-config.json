@@ -1,12 +1,5 @@
 [
 {
-  "name":"com.amazonaws.services.lambda.runtime.api.client.runtimeapi.InvocationRequest",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-}
-,
-{
   "name":"java.lang.Boolean",
   "methods":[{"name":"getBoolean","parameterTypes":["java.lang.String"] }]}
 ,
