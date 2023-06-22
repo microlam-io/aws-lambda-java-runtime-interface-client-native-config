@@ -79,8 +79,13 @@
 ,
 {
   "name":"jdk.internal.misc.Unsafe",
-  "methods":[{"name":"getUnsafe","parameterTypes":[] }]}
-,
+  "methods":[
+  	{
+	  	"name":"getUnsafe",
+	  	"parameterTypes":[] 
+  	}
+   ]
+},
 {
   "name":"jdk.internal.module.IllegalAccessLogger",
   "fields":[{"name":"logger"}]

@@ -5,7 +5,7 @@
 
       <groupId>io.microlam</groupId>
       <artifactId>aws-lambda-java-runtime-interface-client-native-config</artifactId>
-      <version>2.1.0_2</version>
+      <version>2.3.2-SNAPSHOT</version>
 	  <packaging>pom</packaging>
 
       <name>Configuration for compiling natively aws aws-lambda-java-runtime-client</name>
@@ -38,7 +38,6 @@
 	  <connection>scm:git:git://github.com/microlam-io/${project.artifactId}.git</connection>
 	  <developerConnection>scm:git:ssh://git@github.com/microlam-io/${project.artifactId}.git</developerConnection>
 	  <url>https://github.com/microlam-io/${project.artifactId}/tree/master</url>
-	  <tag>HEAD</tag>
   </scm>
 
 	<distributionManagement>
@@ -149,13 +148,37 @@
 		            </descriptors>
 		        </configuration>
             </execution>
+            <execution>
+                <id>java19</id>
+                <phase>package</phase>
+                <goals>
+                    <goal>single</goal>
+                </goals>
+		        <configuration>
+		            <descriptors>
+		                <descriptor>src/assembly/java19.xml</descriptor>
+		            </descriptors>
+		        </configuration>
+            </execution>
+            <execution>
+                <id>java20</id>
+                <phase>package</phase>
+                <goals>
+                    <goal>single</goal>
+                </goals>
+		        <configuration>
+		            <descriptors>
+		                <descriptor>src/assembly/java20.xml</descriptor>
+		            </descriptors>
+		        </configuration>
+            </execution>
         </executions>
     </plugin>
 
       <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-gpg-plugin</artifactId>
-      <version>1.6</version>
+      <version>3.0.1</version>
       <executions>
         <execution>
           <id>sign-artifacts</id>
@@ -174,26 +197,19 @@
      	<plugin>
 	      <groupId>org.sonatype.plugins</groupId>
 	      <artifactId>nexus-staging-maven-plugin</artifactId>
-	      <version>1.6.7</version>
+	      <version>1.6.13</version>
 	      <extensions>true</extensions>
 	      <configuration>
 	        <serverId>ossrh</serverId>
 	        <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
 	        <autoReleaseAfterClose>true</autoReleaseAfterClose>
 	      </configuration>
-        <dependencies>
-        <dependency>
-          <groupId>com.thoughtworks.xstream</groupId>
-          <artifactId>xstream</artifactId>
-          <version>1.4.15</version> <!-- apparently this needs to be exactly this version -->
-        </dependency>
-      </dependencies>
     	</plugin>
     	
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>3.0.0-M4</version>
+        <version>3.0.1</version>
       </plugin>
 
 	</plugins>
