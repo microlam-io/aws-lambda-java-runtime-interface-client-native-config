@@ -2,10 +2,13 @@
 {
   "name":"com.amazonaws.services.lambda.runtime.api.client.runtimeapi.InvocationRequest",
   "fields":[
+    {"name":"clientContext"}, 
+    {"name":"cognitoIdentity"}, 
     {"name":"content"}, 
     {"name":"deadlineTimeInMs"}, 
     {"name":"id"}, 
-    {"name":"invokedFunctionArn"}
+    {"name":"invokedFunctionArn"}, 
+    {"name":"xrayTraceId"}
   ]
 }
 ]
